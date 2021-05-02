@@ -52,3 +52,9 @@ console.log(document.querySelector('.main-content').appendChild(ex05));
 let ex06 = document.createElement('div');
 ex06.className = 'right-content';
 console.log(document.querySelector('.main-content').appendChild(ex06));
+
+// Ex. 07
+let ex07 = document.createElement('img');
+ex07.className = 'small-image';
+ex07.src = 'https://picsum.photos/200';
+console.log(document.querySelector('.left-content').appendChild(ex07));

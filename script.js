@@ -37,3 +37,8 @@ console.log(document.querySelector('body').appendChild(ex02));
 let ex03 = document.createElement('div');
 ex03.className = 'center-content';
 console.log(document.querySelector('.main-content').appendChild(ex03));
+
+// Ex. 04
+let ex04 = document.createElement('p');
+ex04.innerHTML = 'Algum Texto ...';
+console.log(document.querySelector('.center-content').appendChild(ex04));

@@ -117,3 +117,6 @@ ex09TagH3C.className = 'description';
 // Ex. 03
 let removeEx05 = document.querySelector('.left-content');
 console.log(document.querySelector('.main-content').removeChild(removeEx05));
+
+//Ex. 04
+ex06.style.marginRight = 'auto';

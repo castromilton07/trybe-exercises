@@ -1,1 +1,1 @@
-# Repositório de Exercícios Resolvidos #
+# 5.2 #

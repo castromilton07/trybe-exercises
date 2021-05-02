@@ -103,3 +103,8 @@ console.log(document.querySelector('.main-content').appendChild(ex09TagH3B));
 let ex09TagH3C = document.createElement('h3');
 ex09TagH3C.innerHTML = 'Tag H3 (3)';
 console.log(document.querySelector('.main-content').appendChild(ex09TagH3C));
+
+//Parte 02
+
+// Ex. 01
+ex01.className = 'title';

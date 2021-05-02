@@ -108,3 +108,8 @@ console.log(document.querySelector('.main-content').appendChild(ex09TagH3C));
 
 // Ex. 01
 ex01.className = 'title';
+
+// Ex. 02
+ex09TagH3A.className = 'description';
+ex09TagH3B.className = 'description';
+ex09TagH3C.className = 'description';

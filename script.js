@@ -113,3 +113,7 @@ ex01.className = 'title';
 ex09TagH3A.className = 'description';
 ex09TagH3B.className = 'description';
 ex09TagH3C.className = 'description';
+
+// Ex. 03
+let removeEx05 = document.querySelector('.left-content');
+console.log(document.querySelector('.main-content').removeChild(removeEx05));

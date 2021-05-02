@@ -32,3 +32,8 @@ console.log(document.querySelector('body').appendChild(ex01));
 let ex02 = document.createElement('div');
 ex02.className = 'main-content';
 console.log(document.querySelector('body').appendChild(ex02));
+
+// Ex. 03
+let ex03 = document.createElement('div');
+ex03.className = 'center-content';
+console.log(document.querySelector('.main-content').appendChild(ex03));

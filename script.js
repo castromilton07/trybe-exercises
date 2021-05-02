@@ -120,3 +120,6 @@ console.log(document.querySelector('.main-content').removeChild(removeEx05));
 
 //Ex. 04
 ex06.style.marginRight = 'auto';
+
+//Ex. 05
+ex03.parentElement.style.backgroundColor = 'green';

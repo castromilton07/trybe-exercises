@@ -42,3 +42,8 @@ console.log(document.querySelector('.main-content').appendChild(ex03));
 let ex04 = document.createElement('p');
 ex04.innerHTML = 'Algum Texto ...';
 console.log(document.querySelector('.center-content').appendChild(ex04));
+
+// Ex. 05
+let ex05 = document.createElement('div');
+ex05.className = 'left-content';
+console.log(document.querySelector('.main-content').appendChild(ex05));

@@ -123,3 +123,16 @@ ex06.style.marginRight = 'auto';
 
 //Ex. 05
 ex03.parentElement.style.backgroundColor = 'green';
+
+//Ex. 06
+// Opção 01
+console.log(document.getElementsByTagName('ul')[0].lastElementChild.remove());
+console.log(document.getElementsByTagName('ul')[0].lastElementChild.remove());
+
+/* 
+// Opção 02
+let removeEx08A = document.getElementsByTagName('ul')[0].lastElementChild;
+console.log(document.getElementsByTagName('ul')[0].removeChild(removeEx08A));
+let removeEx08B = document.getElementsByTagName('ul')[0].lastElementChild;
+console.log(document.getElementsByTagName('ul')[0].removeChild(removeEx08B));
+*/

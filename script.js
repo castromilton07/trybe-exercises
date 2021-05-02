@@ -47,3 +47,8 @@ console.log(document.querySelector('.center-content').appendChild(ex04));
 let ex05 = document.createElement('div');
 ex05.className = 'left-content';
 console.log(document.querySelector('.main-content').appendChild(ex05));
+
+// Ex. 06
+let ex06 = document.createElement('div');
+ex06.className = 'right-content';
+console.log(document.querySelector('.main-content').appendChild(ex06));

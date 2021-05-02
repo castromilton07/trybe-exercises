@@ -92,3 +92,14 @@ console.log(document.querySelector('.right-content').firstElementChild.appendChi
 let dez = document.createElement('li');
 dez.innerHTML = 'Dez';
 console.log(document.querySelector('.right-content').firstElementChild.appendChild(dez));
+
+// Ex. 09
+let ex09TagH3A = document.createElement('h3');
+ex09TagH3A.innerHTML = 'Tag H3 (1)';
+console.log(document.querySelector('.main-content').appendChild(ex09TagH3A));
+let ex09TagH3B = document.createElement('h3');
+ex09TagH3B.innerHTML = 'Tag H3 (2)';
+console.log(document.querySelector('.main-content').appendChild(ex09TagH3B));
+let ex09TagH3C = document.createElement('h3');
+ex09TagH3C.innerHTML = 'Tag H3 (3)';
+console.log(document.querySelector('.main-content').appendChild(ex09TagH3C));

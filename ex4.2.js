@@ -44,3 +44,27 @@ for (let number of numbers) {
 if (oddCount < 1) {
     console.log('nenhum valor ímpar encontrado');
 } else console.log(oddCount);
+
+// Ex. 07
+let lowerNumber = 0;
+for (let number of numbers) {
+    if (numbers.indexOf(number) === 0) {
+        lowerNumber = number;
+    }
+    if (number < lowerNumber) {
+        lowerNumber = number;
+    }
+}
+console.log(lowerNumber);
+
+// Ex. 08
+let arrayEx08 = [];
+for (index = 1; index <= 25; index += 1) {
+    arrayEx08.push(index);
+}
+console.log(arrayEx08);
+
+// Ex. 09
+for (let valor of arrayEx08) {
+    console.log((valor / 2));
+}

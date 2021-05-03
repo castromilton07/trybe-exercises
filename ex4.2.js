@@ -68,3 +68,48 @@ console.log(arrayEx08);
 for (let valor of arrayEx08) {
     console.log((valor / 2));
 }
+
+// Bônus
+
+function bubbleSortIncreasing(disorderedArray, configuration) {
+    let orderedArray = disorderedArray;
+    if (configuration === 'increasing') {
+        for (let index = 1; index < orderedArray.length; index += 1) {
+            for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+              if (orderedArray[index] < orderedArray[secondIndex]) {
+                let position = orderedArray[index];
+                orderedArray[index] = orderedArray[secondIndex];
+                orderedArray[secondIndex] = position;
+              }
+            }
+          }
+        return orderedArray;
+    } else if (configuration === 'decreasing') {
+        for (let index = 1; index < orderedArray.length; index += 1) {
+            for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+              if (orderedArray[index] > orderedArray[secondIndex]) {
+                let position = orderedArray[index];
+                orderedArray[index] = orderedArray[secondIndex];
+                orderedArray[secondIndex] = position;
+              }
+            }
+          }
+        return orderedArray;
+    } else console.log('Configuração inválida!');    
+}
+
+// Ex. 01
+console.log(bubbleSortIncreasing(numbers, 'increasing'));
+
+// Ex. 02
+console.log(bubbleSortIncreasing(numbers, 'decreasing'));
+
+// Ex. 03
+numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let arrayEx03 = [];
+for (let index = 0; index < numbers.length; index += 1) {
+    if (index < numbers.length - 1) {
+        arrayEx03[index] = numbers[index] * numbers[index + 1];
+    } else arrayEx03[index] = numbers[index] * 2;    
+}
+console.log(arrayEx03);

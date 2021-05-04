@@ -86,3 +86,27 @@ function ex04(n) {
     }
 }
 ex04(5);
+
+// Bônus
+
+// Ex. 05
+
+// Ex. 06
+
+/* Feito na época do P.S encontrar e exibir números primos de um array
+function buscaNumeroPrimos(n) {
+    var numerosPrimos = [];
+    for(var contador1 = 0; contador1 <= n; contador1++) {
+        var auxiliar = 0;
+        for(var contador2 = 1; contador2 <= n ; contador2++) {
+            if(contador1%contador2 === 0) {
+                auxiliar++;
+            }
+        }
+        if(auxiliar === 2) {
+            numerosPrimos.push(contador1);
+        }
+    }
+    return numerosPrimos;
+}
+*/

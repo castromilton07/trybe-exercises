@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 5.4</title>
+</head>
+
+<body>
+    <header>
+        <div id="header-container">
+            <h1 id="title">Leitor de Texto</h1>
+            <h2 id="creator">by Milton Castro (sd-12)</h2>
+        </div>
+    </header>
+    <div id='main-container'>
+        <div id="text-box">
+            <h3 class="text-content">What is Lorem Ipsum?</h3>
+            <p class="text-content">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+                sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
+                Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+    </div>
+    <div id='options-container'>
+        <h4 class="options">Opções de visualização:</h4>
+        <label id="bg-palette-label" class="options">Cor de Fundo do Texto:</label>
+        <div id="backgroung-color-palette" class="options">
+            <div id="color-bg-1" class="palette-item" style="background-color: rgb(241, 36, 62);"></div>
+            <div id="color-bg-2" class="palette-item" style="background-color: rgb(26, 144, 217);"></div>
+            <div id="color-bg-3" class="palette-item" style="background-color: rgb(242, 206, 22);"></div>
+            <div id="color-bg-4" class="palette-item" style="background-color: rgb(118, 61, 242);"></div>
+            <div id="color-bg-5" class="palette-item" style="background-color: rgb(3, 140, 51);"></div>
+            <div id="color-bg-6" class="palette-item" style="background-color: rgb(242, 104, 53);"></div>
+            <div id="color-bg-7" class="palette-item" style="background-color: rgb(123, 132, 140);"></div>
+            <div id="color-bg-8" class="palette-item" style="background-color: rgb(139, 26, 15);"></div>
+            <div id="color-bg-9" class="palette-item" style="background-color: rgb(6, 157, 191);"></div>
+            <div id="color-bg-10" class="palette-item" style="background-color: rgb(199, 217, 61);"></div>
+            <div id="color-bg-11" class="palette-item" style="background-color: rgb(255, 255, 255);"></div>
+            <div id="color-bg-12" class="palette-item" style="background-color: rgb(0, 0, 0);"></div>
+        </div>
+        <label id="font-palette-label" class="options">Cor do Texto:</label>
+        <div id="font-color-palette" class="options">
+            <div id="color-font-1" class="palette-item" style="background-color: rgb(241, 36, 62);"></div>
+            <div id="color-font-2" class="palette-item" style="background-color: rgb(26, 144, 217);"></div>
+            <div id="color-font-3" class="palette-item" style="background-color: rgb(242, 206, 22);"></div>
+            <div id="color-font-4" class="palette-item" style="background-color: rgb(118, 61, 242);"></div>
+            <div id="color-font-5" class="palette-item" style="background-color: rgb(3, 140, 51);"></div>
+            <div id="color-font-6" class="palette-item" style="background-color: rgb(242, 104, 53);"></div>
+            <div id="color-font-7" class="palette-item" style="background-color: rgb(123, 132, 140);"></div>
+            <div id="color-font-8" class="palette-item" style="background-color: rgb(139, 26, 15);"></div>
+            <div id="color-font-9" class="palette-item" style="background-color: rgb(6, 157, 191);"></div>
+            <div id="color-font-10" class="palette-item" style="background-color: rgb(199, 217, 61);"></div>
+            <div id="color-font-11" class="palette-item" style="background-color: rgb(255, 255, 255);"></div>
+            <div id="color-font-12" class="palette-item" style="background-color: rgb(0, 0, 0);"></div>
+        </div>
+        <label for="line-height" id="line-height-label" class="options">Informe o espaçamento:</label>
+        <input type="text" name="line-height" id="line-height-input" class="options" value="25">
+        <span id="line-height-unit" class="options">px</span>
+        <label for="font-size" id="font-size-label" class="options">Informe o tamanho da fonte:</label>
+        <input type="text" name="font-size" id="font-size-input" class="options" value="20">
+        <span id="font-size-unit" class="options">px</span>
+        <label for="font" id="font-family-label" class="options">Escolha uma fonte:</label>
+        <select name="font" id="font-family-select" class="options">
+            <option value="Dancing Script">Dancing Script (Cusive)</option>
+            <option value="Itim">Itim (Cursive)</option>
+            <option value="Montserrat">Montserrat (Sans-Serif)</option>
+            <option value="Open Sans">Open Sans (Sans-Serif)</option>
+            <option value="Roboto">Roboto (Sans-Serif)</option>
+            <option value="Ubuntu">Ubuntu (Sans-Serif)</option>
+            <option value="Merriweather">Merriweather (Serif)</option>
+            <option value="Playfair Display">Playfair Display (Serif)</option>
+        </select>
+
+        <button type="button" class="options">Aplicar</button>
+    </div>
+    <footer>
+        <h5> 🚀 VQV Trybers ! </h5>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

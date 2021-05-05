@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Itim&family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Roboto:wght@300&family=Ubuntu:wght@300&family=Merriweather:wght@300&family=Playfair+Display&display=swap');
+
+/*
+Dancing Script, cursive;
+Itim, cursive;
+Montserrat, sans-serif;
+Open Sans, sans-serif;
+Roboto, sans-serif;
+Ubuntu, sans-serif;
+Merriweather, serif;
+Playfair Display, serif;
+*/
+body {
+  font-family: Playfair Display, serif;
+  background-color: rgb(25, 144, 161);
+}
+
+header {
+  width: 80%;
+  height: 120px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+#header-container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  font-family: Playfair Display, serif;
+  color: rgb(24, 107, 77);
+  background-color: rgb(144, 219, 181);
+  position: relative;
+  border-radius: 30px;
+  
+}
+
+#title {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 15px 0px 0px 205px;
+  font-size: 50px;
+}
+
+#creator {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin: 0px 20px 10px 0px;
+  font-size: 18px;
+}
+
+#main-container {
+  width: 70%;
+  height: 55%;
+  margin: auto;
+  padding: 2.5% 5% 2.5% 5%;
+  background-color: rgb(128, 89, 148);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+
+#text-box {
+  margin: auto;
+  padding: 10px 30px 10px 30px;
+  background-color: darkred;
+  border-radius: 30px;
+  
+}
+
+#text-box h3 {
+  text-align: center;
+  font-size: 25px;
+}
+
+#text-box p {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+#text-box .text-content {
+  font-family: Itim;
+  color: white;
+}
+
+#options-container {
+  width: 80%;
+  height: 200px;
+  margin: auto;
+  font-family: Ubuntu;
+  font-weight: 900;
+  background-color: darksalmon;
+  position: relative;
+  border-radius: 30px;
+}
+
+#options-container h4 {
+  font-family: Ubuntu;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-left: 20px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#options-container .options {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#options-container #bg-palette-label {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin: 0px 305px 125px 0px;
+}
+
+#backgroung-color-palette {
+  width: 280px;
+  height: 21px;
+  /*border: 3px solid white;*/
+  padding: 2px 2px 2px 2px;
+  margin-right: 20px;
+  position: absolute;
+  bottom: 102px;
+  right: 0px;
+}
+
+#options-container #font-palette-label {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin: 0px 305px 87px 0px;
+}
+
+#font-color-palette {
+  width: 280px;
+  height: 21px;
+  /*border: 3px solid white;*/
+  padding: 2px 2px 2px 2px;
+  position: absolute;
+  margin-right: 20px;
+  bottom: 65px;
+  right: 0px;
+}
+
+.palette-item {
+  width: 15px;
+  height: 15px;
+  border:1px solid black;
+  border-radius: 50%;
+  float: left;
+  margin: 2px 3px 2px 3px;
+}
+
+#options-container #font-size-label {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin: 0px 0px 20px 20px;
+}
+
+#options-container #font-size-input {
+  width: 50px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin: 0px 0px 20px 228px;
+}
+
+#options-container #font-size-unit {
+  width: 50px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin: 0px 0px 23px 290px;
+}
+
+#options-container #line-height-label {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin: 0px 0px 20px 370px;
+}
+
+#options-container #line-height-input {
+  width: 50px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin: 0px 0px 20px 546px;
+}
+
+#options-container #line-height-unit {
+  width: 50px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin: 0px 0px 23px 608px;
+}
+
+#options-container #font-family-label {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin: 0px 0px 55px 20px;
+}
+
+#options-container #font-family-select {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin: 0px 0px 55px 158px;
+}
+
+#options-container button {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin: 0px 20px 0px 0px;
+}
+
+footer {
+  width: 80%;
+  height: 10%;
+  margin: auto;
+  color: crimson;
+  background-color: darkseagreen;
+  border-radius: 30px;
+}
+
+footer h5 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Montserrat;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

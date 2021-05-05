@@ -64,7 +64,7 @@ header {
 #text-box {
   margin: auto;
   padding: 10px 30px 10px 30px;
-  background-color: darkred;
+  background-color: rgb(139, 26, 15);
   border-radius: 30px;
   
 }
@@ -82,7 +82,7 @@ header {
 
 #text-box .text-content {
   font-family: Itim;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 #options-container {

@@ -89,3 +89,12 @@ function validateForm(event) {
     }
 }
 curriculumForm.addEventListener('submit', validateForm);
+
+const clearButton = document.querySelector('#clear-button');
+
+function clearForm() {
+    const curriculumDiv = document.getElementsByTagName('div');
+    const bodyElement = document.getElementsByTagName('body');
+    bodyElement[0].removeChild(curriculumDiv[0]);
+}
+clearButton.addEventListener('click', clearForm);

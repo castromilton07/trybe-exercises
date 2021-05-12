@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário Currículo - Exercício 6.1</title>
+</head>
+<body>
+    <form action="index.html" id="curriculum" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <label for="fullname-input">Nome
+                <input type="text" name="fullname" id="fullname-input" class="form-data" maxlength="40" placeholder="Digite o seu nome" required>
+            </label>
+            <label for="email-input">E-mail
+                <input type="email" name="email" id="email-input" class="form-data" maxlength="50" placeholder="Digite o seu e-mail" required>
+            </label>
+            <label for="cpf-input">CPF
+                <input type="text" name="cpf" id="cpf-input" class="form-data" maxlength="11" placeholder="Digite o seu CPF" required>
+            </label>
+            <label for="address-input">Endereço
+                <input type="text" name="address" id="address-input" class="form-data" maxlength="200" placeholder="Digite o seu Endereço" required>
+            </label>
+            <label for="city-input">Cidade
+                <input type="text" name="city" id="city-input" class="form-data" maxlength="28" placeholder="Digite sua Cidade" required>
+            </label>
+            <label for="state-input">Estado
+                <select name="state" id="state-input" class="form-data" required></select>
+            </label>
+            <label for="home-input">Tipo
+                <input type="radio" name="type" id="home-input" value="house" checked>Casa
+            </label for="apartment-input">
+            <label for="apartment-input">
+                <input type="radio" name="type" id="apartment-input" value="apartment">Apartamento
+            </label>
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

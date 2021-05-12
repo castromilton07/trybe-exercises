@@ -34,6 +34,20 @@
                 <input type="radio" name="type" id="apartment-input" value="apartment">Apartamento
             </label>
         </fieldset>
+        <fieldset>
+            <label for="abstract-input">Resumo do Currículo
+                <textarea name="abstract" id="abstract-input" col="20" row="5" maxlength="1000" style="resize: none;" placeholder="Digite o resumo do seu currículo" required></textarea>
+            </label>
+            <label for="job-input">Cargo
+                <input type="text" name="job" id="job-input" maxlength="40" placeholder="Digite o último Cargo" required>
+            </label>
+            <label for="job-description-input">Descrição do cargo
+                <input type="text" name="job-description" id="job-description-input" maxlength="500" placeholder="Descreva esse Cargo" required>
+            </label>
+            <label for="initial-date-input">Data de início
+                <input type="text" name="initial-date" id="initial-date-input" maxlength="10" placeholder="Formato **/**/****" required>
+            </label>
+        </fieldset>
     </form>
     <script src="script.js"></script>
 </body>

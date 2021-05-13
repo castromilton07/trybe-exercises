@@ -1,64 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Formulário Currículo - Exercício 6.1</title>
 </head>
+
 <body>
     <form action="index.html" id="curriculum" method="POST" enctype="multipart/form-data">
-        <fieldset>
-            <label for="fullname-input">Nome
-                <input type="text" name="fullname" id="fullname-input" class="form-data" maxlength="40" placeholder="Digite o seu nome" required>
-            </label>
-            <label for="email-input">E-mail
-                <input type="email" name="email" id="email-input" class="form-data" maxlength="50" placeholder="Digite o seu e-mail" required>
-            </label>
-            <label for="cpf-input">CPF
-                <input type="text" name="cpf" id="cpf-input" class="form-data" maxlength="11" placeholder="Digite o seu CPF" required>
-            </label>
-            <label for="address-input">Endereço
-                <input type="text" name="address" id="address-input" class="form-data" maxlength="200" placeholder="Digite o seu Endereço" required>
-            </label>
-            <label for="city-input">Cidade
-                <input type="text" name="city" id="city-input" class="form-data" maxlength="28" placeholder="Digite sua Cidade" required>
-            </label>
-            <label for="state-input">Estado
-                <select name="state" id="state-input" class="form-data" required></select>
-            </label>
-            <label for="home-input">Tipo
-                <input type="radio" name="type" id="home-input" value="house" checked>Casa
-            </label for="apartment-input">
-            <label for="apartment-input">
-                <input type="radio" name="type" id="apartment-input" value="apartment">Apartamento
-            </label>
-        </fieldset>
-        <fieldset>
-            <label for="abstract-input">Resumo do Currículo
-                <textarea name="abstract" id="abstract-input" col="20" row="5" maxlength="1000" style="resize: none;" placeholder="Digite o resumo do seu currículo" required></textarea>
-            </label>
-            <label for="job-input">Cargo
-                <input type="text" name="job" id="job-input" maxlength="40" placeholder="Digite o último Cargo" required>
-            </label>
-            <label for="job-description-input">Descrição do cargo
-                <input type="text" name="job-description" id="job-description-input" maxlength="500" placeholder="Descreva esse Cargo" required>
-            </label>
-            <label for="initial-date-input">Data de início
-                <input type="text" name="initial-date" id="initial-date-input" maxlength="10" placeholder="Formato **/**/****" required>
-            </label>
-        </fieldset>
-        <label for="submit-button">
-            <button type="submit" name="submit" id="submit-button">Enviar</button>
-        </label>
-        <label for="clear-button">
-            <button type="reset" name="clear" id="clear-button">Limpar</button>
-        </label>
+        <h1 class="display-5 text-center">Formulário do Candidato</h1>
+        <div>
+            <p class="display-6">Dados Pessoais</p>
+            <div class="row g-3 mb-3">
+                <div class="col-md">
+                    <div class="form-floating">
+                        <input type="text" name="fullname" id="fullname-input" class="form-control" maxlength="40"
+                            placeholder="Digite o seu nome" required>
+                        <label for="fullname-input" class="form-label">Nome</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-floating">
+                        <input type="text" name="cpf" id="cpf-input" class="form-control" maxlength="11"
+                            placeholder="Digite o seu CPF" required>
+                        <label for="cpf-input" class="form-label">CPF</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" name="email" id="email-input" class="form-control" maxlength="50"
+                    placeholder="Digite o seu e-mail" required>
+                <label for="email-input" class="form-label">E-mail</label>
+            </div>
+            <div class="row g-3 mb-3">
+                <div class="col-md">
+                    <div class="form-floating">
+                        <input type="text" name="address" id="address-input" class="form-control" maxlength="200"
+                            placeholder="Digite o seu Endereço" required>
+                        <label for="address-input" class="form-label">Endereço</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-floating">
+                        <input type="text" name="city" id="city-input" class="form-control" maxlength="28"
+                            placeholder="Digite sua Cidade" required>
+                        <label for="city-input" class="form-label">Cidade</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-floating">
+                        <select name="state" id="state-input" class="form-select" required></select>
+                        <label for="state-input" class="form-label">Estado</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                Tipo
+                <div class="row g-3 mb-3">
+                    <div class="col-md">
+                        <input type="radio" name="type" id="home-input" class="form-check-input" value="house" checked>
+                        <label for="home-input" class="form-check-label">
+                            Casa
+                        </label>
+                    </div>
+                    <div class="col-md">
+                        <input type="radio" name="type" id="apartment-input" class="form-check-input" value="apartment">
+                        <label for="apartment-input" class="form-check-label">
+                            Apartamento
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="display-6">Informações do Currículo</p>
+            <div class="mb-3">
+                <label for="abstract-input" class="form-label">Resumo do Currículo</label>
+                <textarea name="abstract" id="abstract-input" class="form-control" col="20" row="5" maxlength="1000"
+                    style="height: 100px; resize: none;" placeholder="Digite o resumo do seu currículo"
+                    required></textarea>
+            </div>
+            <div class="row g-3 mb-3">
+                <div class="col-md">
+                    <label for="job-input" class="form-label">Cargo</label>
+                    <input type="text" name="job" id="job-input" class="form-control" maxlength="40"
+                        placeholder="Digite o último Cargo" required>
+
+                </div>
+                <div class="col-md">
+                    <label for="job-description-input" class="form-label">Descrição do cargo</label>
+                    <input type="text" name="job-description" id="job-description-input" class="form-control"
+                        maxlength="500" placeholder="Descreva esse Cargo" required>
+                </div>
+                <div class="col-md">
+                    <label for="initial-date-input" class="form-label">Data de início</label>
+                    <input type="text" name="initial-date" id="initial-date-input" class="form-control" maxlength="10"
+                        placeholder="Formato **/**/****" required>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button type="submit" name="submit" id="submit-button" class="btn btn-primary">Enviar</button>
+            <button type="reset" name="clear" id="clear-button" class="btn btn-secondary">Limpar</button>
+        </div>
     </form>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha256-Ml0Z+aH2Ktgvnzgqh39Cv0R8jLspPdfNLAPPO88vFGo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha256-Ml0Z+aH2Ktgvnzgqh39Cv0R8jLspPdfNLAPPO88vFGo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday@1.8.2/pikaday.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

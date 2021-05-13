@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário Currículo - Exercício 6.1</title>
+</head>
+<body>
+    <form action="index.html" id="curriculum" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <label for="fullname-input">Nome
+                <input type="text" name="fullname" id="fullname-input" class="form-data" maxlength="40" placeholder="Digite o seu nome" required>
+            </label>
+            <label for="email-input">E-mail
+                <input type="email" name="email" id="email-input" class="form-data" maxlength="50" placeholder="Digite o seu e-mail" required>
+            </label>
+            <label for="cpf-input">CPF
+                <input type="text" name="cpf" id="cpf-input" class="form-data" maxlength="11" placeholder="Digite o seu CPF" required>
+            </label>
+            <label for="address-input">Endereço
+                <input type="text" name="address" id="address-input" class="form-data" maxlength="200" placeholder="Digite o seu Endereço" required>
+            </label>
+            <label for="city-input">Cidade
+                <input type="text" name="city" id="city-input" class="form-data" maxlength="28" placeholder="Digite sua Cidade" required>
+            </label>
+            <label for="state-input">Estado
+                <select name="state" id="state-input" class="form-data" required></select>
+            </label>
+            <label for="home-input">Tipo
+                <input type="radio" name="type" id="home-input" value="house" checked>Casa
+            </label for="apartment-input">
+            <label for="apartment-input">
+                <input type="radio" name="type" id="apartment-input" value="apartment">Apartamento
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="abstract-input">Resumo do Currículo
+                <textarea name="abstract" id="abstract-input" col="20" row="5" maxlength="1000" style="resize: none;" placeholder="Digite o resumo do seu currículo" required></textarea>
+            </label>
+            <label for="job-input">Cargo
+                <input type="text" name="job" id="job-input" maxlength="40" placeholder="Digite o último Cargo" required>
+            </label>
+            <label for="job-description-input">Descrição do cargo
+                <input type="text" name="job-description" id="job-description-input" maxlength="500" placeholder="Descreva esse Cargo" required>
+            </label>
+            <label for="initial-date-input">Data de início
+                <input type="text" name="initial-date" id="initial-date-input" maxlength="10" placeholder="Formato **/**/****" required>
+            </label>
+        </fieldset>
+        <label for="submit-button">
+            <button type="submit" name="submit" id="submit-button">Enviar</button>
+        </label>
+        <label for="clear-button">
+            <button type="reset" name="clear" id="clear-button">Limpar</button>
+        </label>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha256-Ml0Z+aH2Ktgvnzgqh39Cv0R8jLspPdfNLAPPO88vFGo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

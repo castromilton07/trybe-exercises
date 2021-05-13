@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "date-fns": "^2.21.3",
+    "just-validate": "^1.5.0"
+  }
+}

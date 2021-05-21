@@ -1,3 +1,5 @@
+const {isDate, isExists, isFuture, isValid, parse, toDate,} = require ('date-fns');
+
 const stateInput = document.querySelector('#state-input');
 
 function createStateOptions() {
@@ -42,25 +44,21 @@ function getFormData(data) {
 }
 
 function validateDate (date) {
-    const day = date.slice(0, -8);
-    const month = date.slice(3, -5);
-    const year = date.slice(-4);
-    const separators = date.slice(2, -7) + date.slice(5, -4);
+    parse(date, 'dd-MM-yyyy', new Date());
+    const dateValue = new Date(date);
+    alert(isDate(dateValue));
+    alert(isExists(dateValue));
+    alert(isFuture(dateValue));
+    alert(isValid(dateValue));
+    alert(parse(date, 'dd-MM-yyyy', new Date()));
+    alert(toDate(date));
     if (separators !== '//') {
         // alert('ERRO DE FORMATAÇÃO');
-        return 'Erro no campo "Data de Início": Foi inserida uma data com erro de formatação (separadores devem ser "/").';
+        return 'Erro no campo "Data de Início": Foi inserida uma data inexistente.';
     }
     if ((day <= 0) || (day > 31)) {
         // alert('ERRO INTERVALO: DIA');
-        return 'Erro no campo "Data de Início": Foi inserido um dia fora do intervalo existente (0 < DIA <= 31).';
-    }
-    if ((month <= 0) || (month > 12)) {
-        // alert('ERRO INTERVALO: MÊS');
-        return 'Erro no campo "Data de Início": Foi inserido um mês fora do intervalo existente (0 < MÊS <= 12).';
-    }
-    if (year < 0) {
-        // alert('ERRO ANO (NEGATIVO)');
-        return 'Erro no campo "Data de Início": Foi inserido um ano NEGATIVO (ANO > 0).';
+        return 'Erro no campo "Data de Início": Foi inserida uma data futura.';
     }
     return 'true';
 }
@@ -81,7 +79,7 @@ function validateForm(event) {
         paragraph.innerHTML = resultData;
         result.appendChild(paragraph);
         bodyElement[0].appendChild(result);
-        form.submit();
+        // form.submit();
     } else {
         paragraph.innerHTML = validate;
         result.appendChild(paragraph);

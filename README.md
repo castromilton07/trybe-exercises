@@ -13,9 +13,9 @@
 - [ :heavy_check_mark: ] - _Unish & Bash_
 - [ :heavy_check_mark: ] - _Git & GitHub_
 - [ :heavy_check_mark: ] - _HTML & CSS_
-- [ :star: ] - **JavaScrip & DOM**
-- [ :x: ] - _Advanced HTML & CSS_
-- [ :x: ] - _Advanced JavaScript & Tests_
+- [ :heavy_check_mark: ] - **JavaScrip & DOM**
+- [ :heavy_check_mark: ] - _Advanced HTML & CSS_
+- [ :star: ] - _Advanced JavaScript & Tests_
 
 **2. Front-end Development**
 - [ :x: ] - _SQL and NoSQL Databases_

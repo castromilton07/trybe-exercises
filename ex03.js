@@ -1,23 +1,22 @@
 const assert = require('assert');
 
-const myRemove = (arr, item) => {
-    let newArr = arr;
+const myRemoveWithoutCopy = (arr, item) => {
     if (arr.includes(item)) {
-        newArr = arr.filter( element => {
+        arr = arr.filter( element => {
             return (element !== item);
         });
-        return newArr;
-    }else return newArr;
+        return arr;
+    } else return arr;
 };
 
 const arrayTest = [1, 2, 4, 8, 10];
-const test1 = myRemove([1, 2, 3, 4], 3);
-const test2 = myRemove([1, 2, 3, 4], 5);
-myRemove(arrayTest, 8);
+const test1 = myRemoveWithoutCopy([1, 2, 3, 4], 3);
+const test2 = myRemoveWithoutCopy([1, 2, 3, 4], 5);
+myRemoveWithoutCopy(arrayTest, 8);
 const expected1 = [1, 2, 4];
 const expected2 = [1, 2, 3, 4];
 
-assert.strictEqual(typeof(myRemove), 'function');
+assert.strictEqual(typeof(myRemoveWithoutCopy), 'function');
 
 
 assert.deepStrictEqual(test1, expected1, 'O Array esperado é: [1, 2, 4]');

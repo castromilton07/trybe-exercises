@@ -18,8 +18,16 @@ const expectedResult = [
   { id: 6, name: 'O Chamado de Cthulhu', genre: 'Terror', author: { name: 'H. P. Lovecraft', birthYear: 1890 }, releaseYear: 1928, },
 ];
 
-function booksOrderedByReleaseYearDesc() {
-  // escreva aqui seu código
+const booksOrderedByReleaseYearDesc = () => books.sort((a, b) => { if (a.releaseYear > b.releaseYear) return -1; });
+
+function booksOrderedByReleaseYearDesc2() {
+  const releaseYearOrder = [], booksOrdered = [];
+  books.forEach((book) => releaseYearOrder.push(book.releaseYear));
+  releaseYearOrder.sort().reverse();
+  releaseYearOrder.forEach((release) => booksOrdered.push(books.find((book) => book.releaseYear === release)));
+  return booksOrdered;
 }
 
 assert.deepStrictEqual(booksOrderedByReleaseYearDesc(), expectedResult);
+
+assert.deepStrictEqual(booksOrderedByReleaseYearDesc2(), expectedResult);

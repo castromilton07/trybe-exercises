@@ -9,8 +9,6 @@ const books = [
   { id: 6, name: 'O Chamado de Cthulhu', genre: 'Terror', author: { name: 'H. P. Lovecraft', birthYear: 1890, }, releaseYear: 1928, },
 ];
 
-function authorBornIn1947() {
-  return books.find((book) => book.author.birthYear === 1947).author.name;
-}
+const authorBornIn1947 = () => books.find((book) => book.author.birthYear === 1947).author.name;
 
 assert.strictEqual(authorBornIn1947(), 'Stephen King');

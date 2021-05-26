@@ -9,19 +9,11 @@ const books = [
   { id: 6, name: 'O Chamado de Cthulhu', genre: 'Terror', author: { name: 'H. P. Lovecraft', birthYear: 1890, }, releaseYear: 1928, },
 ];
 
-const expectedResult = {
-  author: {
-    birthYear: 1948,
-    name: 'George R. R. Martin',
-  },
-  genre: 'Fantasia',
-  id: 1,
-  name: 'As Crônicas de Gelo e Fogo',
-  releaseYear: 1991,
-};
+const expectedResult = { author: { birthYear: 1948, name: 'George R. R. Martin', }, genre: 'Fantasia', id: 1, name: 'As Crônicas de Gelo e Fogo', releaseYear: 1991, };
 
 function getNamedBook() {
-  // escreva seu código aqui
+  // return books.find((book) => { if (book.name.length === 26) return book } );
+  return books.find((book) => book.name.length === 26 );
 }
 
 assert.deepStrictEqual(getNamedBook(), expectedResult);

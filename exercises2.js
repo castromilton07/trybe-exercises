@@ -11,11 +11,11 @@ const books = [
 
 function smallerName() {
     let nameBook;
-    // escreva aqui o seu código
-  
-    // Variável nameBook que receberá o valor do menor nome;
+    books.forEach((book) => {
+        if (typeof (nameBook) === 'undefined') nameBook = book.name;
+        else if (book.name.length < nameBook.length) nameBook = book.name;
+    });
     return nameBook;
   }
-  
-  assert.strictEqual(smallerName(), 'Duna');
-  
+
+assert.strictEqual(smallerName(), 'Duna');

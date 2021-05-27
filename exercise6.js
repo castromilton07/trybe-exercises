@@ -9,3 +9,14 @@ const books = [
   { id: 6, name: 'O Chamado de Cthulhu', genre: 'Terror', author: { name: 'H. P. Lovecraft', birthYear: 1890, }, releaseYear: 1928, },
 ];
 
+const expectedResult = [
+  'O Senhor dos Anéis',
+  'Fundação',
+  'O Chamado de Cthulhu',
+];
+
+function oldBooks() {
+  // escreva seu código aqui
+}
+
+assert.deepStrictEqual(oldBooks(), expectedResult);

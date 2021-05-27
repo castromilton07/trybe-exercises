@@ -9,3 +9,18 @@ const books = [
   { id: 6, name: 'O Chamado de Cthulhu', genre: 'Terror', author: { name: 'H. P. Lovecraft', birthYear: 1890, }, releaseYear: 1928, },
 ];
 
+const expectedResult = [
+  { age: 31, author: 'Isaac Asimov', },
+  { age: 38, author: 'H. P. Lovecraft', },
+  { age: 39, author: 'Stephen King', },
+  { age: 43, author: 'George R. R. Martin', },
+  { age: 45, author: 'Frank Herbert', },
+  { age: 62, author: 'J. R. R. Tolkien', },
+];
+
+function nameAndAge() {
+  books.sort((bookA, bookB) => { if ((bookA.releaseYear - bookA.author.birthYear) < bookB.releaseYear - bookB.author.birthYear) return -1; });
+  return books.map((book) => { return {age: (book.releaseYear - book.author.birthYear), author: book.author.name,}; } );
+}
+
+assert.deepStrictEqual(nameAndAge(), expectedResult);

@@ -9,3 +9,15 @@ const books = [
   { id: 6, name: 'O Chamado de Cthulhu', genre: 'Terror', author: { name: 'H. P. Lovecraft', birthYear: 1890, }, releaseYear: 1928, },
 ];
 
+const expectedResult = [
+  'Frank Herbert',
+  'George R. R. Martin',
+  'Isaac Asimov',
+  'J. R. R. Tolkien',
+];
+
+function fantasyOrScienceFictionAuthors() {
+  // escreva seu código aqui
+}
+
+assert.deepStrictEqual(fantasyOrScienceFictionAuthors(), expectedResult);

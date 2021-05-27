@@ -16,8 +16,6 @@ const expectedResult = [
   { id: 4, name: 'Duna', genre: 'Ficção Científica', author: { name: 'Frank Herbert', birthYear: 1920 }, releaseYear: 1965 }
 ];
 
-function fantasyOrScienceFiction() {
-  // escreva seu código aqui
-}
+const fantasyOrScienceFiction = () => books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia');
 
 assert.deepStrictEqual(fantasyOrScienceFiction(), expectedResult);

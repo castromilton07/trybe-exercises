@@ -9,13 +9,15 @@ const books = [
   { id: 6, name: 'O Chamado de Cthulhu', genre: 'Terror', author: { name: 'H. P. Lovecraft', birthYear: 1890, }, releaseYear: 1928, },
 ];
 
-function smallerName() {
+const smallerName = () => books.sort((a, b) => { if (a.name.length < b.name.length) return -1; })[0].name;
+
+/* function smallerName() {
     let nameBook;
     books.forEach((book) => {
         if (typeof (nameBook) === 'undefined') nameBook = book.name;
         else if (book.name.length < nameBook.length) nameBook = book.name;
     });
     return nameBook;
-  }
+  } */
 
 assert.strictEqual(smallerName(), 'Duna');

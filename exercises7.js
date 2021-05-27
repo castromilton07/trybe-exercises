@@ -12,7 +12,9 @@ const books = [
 const expectedResult = false;
 
 function authorUnique() {
-  // escreva seu código aqui
+  let checkAuthorUnique = true;
+  books.forEach((bookFor) => { if (books.some((book) => (book.author.birthYear === bookFor.author.birthYear) && (book.id !== bookFor.id))) checkAuthorUnique = false; } );
+  return checkAuthorUnique;
 }
 
 assert.strictEqual(authorUnique(), expectedResult);

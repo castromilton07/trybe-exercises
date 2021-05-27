@@ -11,10 +11,12 @@ const books = [
 
 const expectedResult = false;
 
-function authorUnique() {
+const authorUnique = () => books.every((bookEvery) => !books.some((book) => { return (book.author.birthYear === bookEvery.author.birthYear) && (book.author.name !== bookEvery.author.name); } ));
+
+/* function authorUnique() {
   let checkAuthorUnique = true;
-  books.forEach((bookFor) => { if (books.some((book) => (book.author.birthYear === bookFor.author.birthYear) && (book.id !== bookFor.id))) checkAuthorUnique = false; } );
+  books.forEach((bookFor) => { if (books.some((book) => (book.author.birthYear === bookFor.author.birthYear) && (book.author.name !== bookFor.author.name))) checkAuthorUnique = false; } );
   return checkAuthorUnique;
-}
+} */
 
 assert.strictEqual(authorUnique(), expectedResult);

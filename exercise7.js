@@ -15,6 +15,8 @@ const authorWith3DotsOnName = () => (books.find((book) => (/^.\. .\. .\. $/).tes
   
 // const authorWith3DotsOnName = () => (books.find((book) => book.author.name[1] === '.' && book.author.name[4] === '.' && book.author.name[7] === '.' )).name;
 
+// const authorWith3DotsOnName = () => books.find((book) => (book.author.name.split(' ').filter((word) => word.endsWith('.')).length === 3)).name;
+
 assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
 
 /* function authorWith3DotsOnName() {
@@ -22,3 +24,5 @@ assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
   const regex2 = /\./g;
   return (books.find((book) => regex1.test(book.author.name.slice(0, 9)) && book.author.name.match(regex2).length === 3 )).name;
 } */
+
+// if (books[1].author.name.split(' ').filter((word) => word.endsWith('.')).length === 3) { console.log(books[1].name); };

@@ -11,8 +11,14 @@ const books = [
 
 const expectedResult = 'O Senhor dos Anéis';
 
-function authorWith3DotsOnName() {
-  // escreva seu código aqui
-}
+const authorWith3DotsOnName = () => (books.find((book) => (/^.\. .\. .\. $/).test(book.author.name.slice(0, 9)) && book.author.name.match(/\./g).length === 3 )).name;
+  
+// const authorWith3DotsOnName = () => (books.find((book) => book.author.name[1] === '.' && book.author.name[4] === '.' && book.author.name[7] === '.' )).name;
 
 assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
+
+/* function authorWith3DotsOnName() {
+  const regex1 = /^.\. .\. .\. $/i;
+  const regex2 = /\./g;
+  return (books.find((book) => regex1.test(book.author.name.slice(0, 9)) && book.author.name.match(regex2).length === 3 )).name;
+} */

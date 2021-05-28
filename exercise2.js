@@ -18,9 +18,11 @@ const expectedResult = [
   { age: 62, author: 'J. R. R. Tolkien', },
 ];
 
-function nameAndAge() {
+const nameAndAge = () => books.map((book) => { return {age: (book.releaseYear - book.author.birthYear), author: book.author.name,}; } ).sort((object1, object2) => { if (object1.age < object2.age) return -1; } );
+
+/* function nameAndAge() {
   books.sort((bookA, bookB) => { if ((bookA.releaseYear - bookA.author.birthYear) < bookB.releaseYear - bookB.author.birthYear) return -1; });
   return books.map((book) => { return {age: (book.releaseYear - book.author.birthYear), author: book.author.name,}; } );
-}
+} */
 
 assert.deepStrictEqual(nameAndAge(), expectedResult);

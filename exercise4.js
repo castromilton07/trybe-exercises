@@ -15,9 +15,14 @@ const expectedResult = [
   { id: 2, name: 'O Senhor dos Anéis', genre: 'Fantasia', author: { name: 'J. R. R. Tolkien', birthYear: 1892 }, releaseYear: 1954, },
 ];
 
-function oldBooksOrdered() {
+const currentYear = new Date().getFullYear();
+
+const oldBooksOrdered = () => books.filter((book) => (currentYear - book.releaseYear) > 60).sort((bookA, bookB) => { if (bookA.releaseYear < bookB.releaseYear) return -1; } );
+
+/* function oldBooksOrdered() {
+  const currentYear = new Date().getFullYear();
   books.sort((bookA, bookB) => { if (bookA.releaseYear < bookB.releaseYear) return -1; } );
-  return books.filter((book) => (2021 - book.releaseYear) > 60);
-}
+  return books.filter((book) => (currentYear - book.releaseYear) > 60);
+} */
 
 assert.deepStrictEqual(oldBooksOrdered(), expectedResult);

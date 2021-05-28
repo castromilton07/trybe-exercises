@@ -16,9 +16,11 @@ const expectedResult = [
   'J. R. R. Tolkien',
 ];
 
-function fantasyOrScienceFictionAuthors() {
+const fantasyOrScienceFictionAuthors = () => (books.filter((book) => (book.genre === 'Ficção Científica') || (book.genre === 'Fantasia'))).map((book) => book.author.name).sort();
+
+/* function fantasyOrScienceFictionAuthors() {
   books.sort((bookA, bookB) => { if (bookA.author.name[0] < bookB.author.name[0]) return -1; } );
   return (books.filter((book) => (book.genre === 'Ficção Científica') || (book.genre === 'Fantasia'))).map((book) => book.author.name);
-}
+} */
 
 assert.deepStrictEqual(fantasyOrScienceFictionAuthors(), expectedResult);

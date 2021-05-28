@@ -15,6 +15,8 @@ const expectedResult = [
   'O Chamado de Cthulhu',
 ];
 
-const oldBooks = () => books.filter((book) => (2021 - book.releaseYear) > 60).map((book) => book.name);
+const currentYear = new Date().getFullYear();
+
+const oldBooks = () => books.filter((book) => (currentYear - book.releaseYear) > 60).map((book) => book.name);
 
 assert.deepStrictEqual(oldBooks(), expectedResult);

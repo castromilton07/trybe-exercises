@@ -6,8 +6,8 @@ const names = [
   'Abeladerco', 'Adieidy', 'Alarucha',
 ];
 
-function containsA() {
-  // escreva seu código aqui
-}
+const containsA = () => {
+  return (names.reduce((previousValue, currentValue) => `${previousValue}${currentValue}`)).match(/a/ig).length;
+};
 
 assert.deepStrictEqual(containsA(), 20);

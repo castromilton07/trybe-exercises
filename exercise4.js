@@ -11,8 +11,6 @@ const books = [
 
 const expectedResult = 'As Crônicas de Gelo e Fogo';
 
-function longestNamedBook() {
-  // escreva seu código aqui
-}
+const longestNamedBook = () => (books.map((book) => book.name)).reduce((previousValue, currentValue) => (currentValue.length > previousValue.length) ? currentValue : previousValue);
 
 assert.deepStrictEqual(longestNamedBook(), expectedResult);

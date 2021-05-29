@@ -9,10 +9,10 @@ const books = [
   { id: 6, name: 'O Chamado de Cthulhu', genre: 'Terror', author: { name: 'H. P. Lovecraft', birthYear: 1890, }, releaseYear: 1928, },
 ];
 
-const expectedResult = 'George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.';
+const expectedResult = 'George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft';
 
-function reduceNames() {
-  // escreva seu código aqui
-}
+const reduceNames = () => (books.map((book) => book.author.name)).reduce((previousValue, currentValue) => {
+    return `${previousValue}, ${currentValue}`;
+});
 
 assert.strictEqual(reduceNames(), expectedResult);

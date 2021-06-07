@@ -11,4 +11,6 @@ const books = [
 
 const authorBornIn1947 = () => books.find((book) => book.author.birthYear === 1947).author.name;
 
+// const booksOrderedByReleaseYearDesc = () => books.sort((a, b) => { if (a.releaseYear > b.releaseYear) return -1; });
+
 assert.strictEqual(authorBornIn1947(), 'Stephen King');

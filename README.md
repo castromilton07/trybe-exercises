@@ -18,8 +18,8 @@
 - [ :heavy_check_mark: ] - _Advanced JavaScript & Tests_
 
 **2. Front-end Development**
-- [ :star: ] - _Introduction to React_
-- [ :x: ] - _Components, States & Events_
+- [ :heavy_check_mark: ] - _Introduction to React_
+- [ :star: ] - _Components, States & Events_
 - [ :x: ] - _Life Cycle & Router_
 - [ :x: ] - _Tests with RTL_
 - [ :x: ] - _Redux on React_

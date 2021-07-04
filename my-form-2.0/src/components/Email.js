@@ -8,7 +8,7 @@ class Email extends Component {
         Email
         <input
           name="email"
-          type="text"
+          type="email"
           value={ value }
           onChange={ handleChange }
           maxLength="50"

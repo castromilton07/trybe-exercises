@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Cargo extends Component {
   render() {
-    const { value, handleChange } = this.props;
+    const { value, handleChange, handleAlert } = this.props;
     return(
       <label>
             Cargo
@@ -10,6 +10,7 @@ class Cargo extends Component {
               name="cargo"
               value={ value }
               onChange={ handleChange }
+              onMouseEnter={ handleAlert }
               maxLength="40"
               required
             />
@@ -19,3 +20,5 @@ class Cargo extends Component {
 }
 
 export default Cargo;
+
+// { alert('Preencha com cuidado esta informação.') }

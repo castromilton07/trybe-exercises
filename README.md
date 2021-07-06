@@ -19,8 +19,8 @@
 
 **2. Front-end Development**
 - [ :heavy_check_mark: ] - _Introduction to React_
-- [ :star: ] - _Components, States & Events_
-- [ :x: ] - _Life Cycle & Router_
+- [ :heavy_check_mark: ] - _Components, States & Events_
+- [ :star: ] - _Life Cycle & Router_
 - [ :x: ] - _Tests with RTL_
 - [ :x: ] - _Redux on React_
 - [ :x: ] - _Context API & React Hooks_

@@ -1,0 +1,2 @@
+SELECT UPPER(FIRST_NAME) AS name
+FROM hr.employees;

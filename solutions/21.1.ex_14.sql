@@ -1,0 +1,2 @@
+SELECT EMPLOYEE_ID AS id, FIRST_NAME AS name, DAY(HIRE_DATE) AS day
+FROM hr.employees;

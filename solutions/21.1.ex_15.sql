@@ -1,0 +1,2 @@
+SELECT EMPLOYEE_ID AS id, FIRST_NAME AS name, MONTH(HIRE_DATE) AS month
+FROM hr.employees;

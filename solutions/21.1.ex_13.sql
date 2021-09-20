@@ -1,0 +1,2 @@
+SELECT EMPLOYEE_ID AS id, FIRST_NAME AS name, YEAR(HIRE_DATE) AS year
+FROM hr.employees;

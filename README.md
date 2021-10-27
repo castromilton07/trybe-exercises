@@ -20,14 +20,14 @@
 **2. Front-end Development**
 - [ :heavy_check_mark: ] - _Introduction to React_
 - [ :heavy_check_mark: ] - _Components, States & Events_
-- [ :star: ] - _Life Cycle & Router_
-- [ :x: ] - _Tests with RTL_
-- [ :x: ] - _Redux on React_
-- [ :x: ] - _Context API & React Hooks_
+- [ :heavy_check_mark: ] - _Life Cycle & Router_
+- [ :heavy_check_mark: ] - _Tests with RTL_
+- [ :heavy_check_mark: ] - _Redux on React_
+- [ :heavy_check_mark: ] - _Context API & React Hooks_
 
 **3. Back-end Development**
-- [ :x: ] - _SQL and NoSQL Databases_
-- [ :x: ] - _Node & Express.JS_
+- [ :heavy_check_mark:: ] - _SQL and NoSQL Databases_
+- [ :star: ] - _Node & Express.JS_
 - [ :x: ] - _MVC, API & REST_
 - [ :x: ] - _JWT & File Upload_
 - [ :x: ] - _Deploy: Heroku_
